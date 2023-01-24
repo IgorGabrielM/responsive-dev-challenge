@@ -29,8 +29,20 @@
     }
 
     main {
-      font-family: 'Space Mono';
-      font-style: normal;
+      font-size: 4vw;
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      text-align: left
+    }
+
+    main p {
+      color: #4F4F4F;
+      font-size: 5vw;
+      font-family: Space Mono;
+      font-weight: 400;
+      letter-spacing: -0.035em;
+      text-align: left;
+
     }
 
     .button {
@@ -49,20 +61,36 @@
     }
 
     .footer {
-      margin-top: 80px;
+      margin-top: 20vh;
       text-align: center;
       font-size: 14px;
       font-family: Montserrat;
       color: gray;
     }
 
-    @media only screen and (min-width: 500px) {
+    @media only screen and (min-width: 1000px) {
       .main-content {
         display: flex;
+        margin-top: 20px;
+      }
+
+      main h1 {
+        font-size: 5vw;
+        width: 50vw;
+      }
+
+      main p {
+        font-size: 2vw;
+        width: 40vw;
+      }
+
+      .image-box {
+        width: 50vw;
       }
 
       .scarecrow {
-        width: 50vw;
+        width: 500px;
+        height: 410px;
       }
     }
   </style>
@@ -70,26 +98,29 @@
 
 <body>
   <div class="content">
-    <p class="title">404 NOT FOUND</p>
-    <div class="main-content">
-      <div class="image-box">
-        <img src="Scarecrow.png" alt="Scarecrow image" class="scarecrow">
-      </div>
-      <div>
+    <div>
+      <p class="title">404 NOT FOUND</p>
+      <div class="main-content">
+        <div class="image-box">
+          <img src="Scarecrow.png" alt="Scarecrow image" class="scarecrow">
+        </div>
+        <div>
 
-        <main>
-          <h1>I have bad new for you</h1>
-          <p>The page you are looking for might be removed or is temporarily unavailable</p>
-        </main>
+          <main>
+            <h1>I have bad news for you</h1>
+            <p>The page you are looking for might be removed or is temporarily unavailable</p>
+          </main>
 
-        <div class="button">
-          <p>BACK TO HOMEPAGE</p>
+          <div class="button">
+            <p>BACK TO HOMEPAGE</p>
+          </div>
         </div>
       </div>
+      <footer>
+        <p class="footer">Create by <u>IgorGabrielM</u> devChallenges.io</p>
+      </footer>
     </div>
-    <footer>
-      <p class="footer">Create by <u>IgorGabrielM</u> devChallenges.io</p>
-    </footer>
+
   </div>
 </body>
 
