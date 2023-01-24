@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+  <title>Devchallenges</title>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .header {
+      height: 20vh;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .header .description {
+      width: 400px;
+    }
+
+    .content {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+
+    .list-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 100px;
+    }
+
+    .image-box:nth-child(3n + 2) {
+      margin-top: 100px;
+    }
+
+    .image-box {
+      width: 200px;
+    }
+
+    .image-box-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .person-description {
+      position: relative;
+      left: 110px;
+      bottom: 240px;
+      transform: rotate(90deg);
+    }
+
+    .image-item {
+      width: 200px;
+    }
+
+    @media only screen and (max-width: 1150px) {
+      .image-box:nth-child(even) {
+        margin-top: 100px;
+      }
+    }
+
+    @media only screen and (max-width: 850px) {
+      .image-box {
+        width: 80px;
+      }
+
+      .image-item {
+        width: 80px;
+      }
+
+      .person-description {
+        font-size: 2vw;
+        left: 50px;
+        bottom: 140px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="header">
+      <h1>
+        <strong>
+          The creative crew
+        </strong>
+      </h1>
+      <div class="description">
+        <h3>
+          Who we are
+        </h3>
+        <p>
+          We are team of creatively diverse, driven, innative indiviuais working in various locations from the world.
+        </p>
+      </div>
+    </div>
+    <div class="list-images">
+      <div class="image-box">
+        <div class="image-box-content">
+          <img src="photo1.png" class="image-item">
+          <strong>Bill Mahaney</strong>
+          <div class="person-description">
+            <p>Product owner</p>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <div class="image-box-content">
+          <img src="photo2.png" class="image-item">
+          <strong>Saba Cabrera </strong>
+          <div class="person-description">
+            <p>Art Director</p>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <div class="image-box-content">
+          <img src="photo3.png" class="image-item">
+          <strong>Bill Mahaney</strong>
+          <div class="person-description">
+            <p>Tech Lead </p>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <div class="image-box-content">
+          <img src="photo4.png" class="image-item">
+          <strong>Bill Mahaney</strong>
+          <div class="person-description">
+            <p>Ux Designer</p>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <div class="image-box-content">
+          <img src="photo5.png" class="image-item">
+          <strong>Bill Mahaney</strong>
+          <div class="person-description">
+            <p>Developer</p>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <div class="image-box-content">
+          <img src="photo6.png" class="image-item">
+          <strong>Bill Mahaney</strong>
+          <div class="person-description">
+            <p>Developer </p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+</body>
+
+</html>
